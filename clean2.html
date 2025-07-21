@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Cleaning – Reinigung nach Events</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    .fade-up { animation: fadeUp 1s ease-in-out; }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-20 fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <img src="https://via.placeholder.com/180x60?text=Logo" alt="Event Cleaning Logo" class="mx-auto mb-6 animate-bounce">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-up">Wir reinigen, während Sie feiern – am Morgen ist alles bereit.</h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-8 fade-up">Professionelle Event-Reinigung für Firmen, Privatkunden & Organisationen</p>
+      <a href="#kontakt" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-transform transform hover:scale-105">Jetzt unverbindlich anfragen</a>
+    </div>
+  </section>
+
+  <!-- USP SECTION -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12 fade-up">Warum Event Cleaning?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-2xl transition-transform hover:scale-105 fade-up">
+          ✅ Über Nacht gereinigt – Location am nächsten Tag sofort nutzbar
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-2xl transition-transform hover:scale-105 fade-up">
+          ✅ Diskret, effizient & umweltfreundlich
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-2xl transition-transform hover:scale-105 fade-up">
+          ✅ Für jede Eventgröße – von Privatfeiern bis Großevents
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-2xl transition-transform hover:scale-105 fade-up">
+          ✅ Flexible Einsatzzeiten – wir arbeiten, wenn Sie schlafen
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KUNDENLOGOS -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-8 fade-up">Vertrauen von Event-Profis</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <img src="https://via.placeholder.com/150x80?text=Logo+1" alt="Logo 1" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Logo 2" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Logo 3" class="h-16 opacity-80 hover:opacity-100 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS KARUSSELL -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8 fade-up">Was unsere Kunden sagen</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper max-w-3xl mx-auto">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">„Nach unserer Firmenfeier war die Location morgens wie neu. Super Service!“</p>
+            <p class="mt-4 font-semibold">– Musterfirma GmbH</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">„Absolut zuverlässig – pünktlich, diskret und gründlich.“</p>
+            <p class="mt-4 font-semibold">– Eventagentur XY</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">„Schnell, professionell und sehr freundlich. Jederzeit wieder!“</p>
+            <p class="mt-4 font-semibold">– Privatkunde Anna L.</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">„Unsere Location war sofort wieder einsatzbereit – top organisiert.“</p>
+            <p class="mt-4 font-semibold">– Kongresshalle Berlin</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">„Einer der besten Reinigungsservices für Events, die wir je genutzt haben.“</p>
+            <p class="mt-4 font-semibold">– Eventmanager Tom S.</p>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FORM -->
+  <section id="kontakt" class="py-20 bg-emerald-500 text-white">
+    <div class="container mx-auto px-6 text-center max-w-xl">
+      <h2 class="text-3xl font-bold mb-6 fade-up">Jetzt unverbindlich anfragen</h2>
+      <form class="space-y-4 text-left fade-up">
+        <input type="text" placeholder="Name" class="w-full p-4 rounded text-gray-900">
+        <input type="text" placeholder="Firma" class="w-full p-4 rounded text-gray-900">
+        <input type="email" placeholder="E-Mail" class="w-full p-4 rounded text-gray-900">
+        <input type="tel" placeholder="Telefon" class="w-full p-4 rounded text-gray-900">
+        <textarea placeholder="Nachricht" rows="4" class="w-full p-4 rounded text-gray-900"></textarea>
+        <button type="submit" class="w-full bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-lg font-semibold transition-transform hover:scale-105">Anfrage senden</button>
+      </form>
+      <p class="mt-4 text-sm text-gray-100">DSGVO-Hinweis: Ihre Daten werden vertraulich behandelt (Platzhaltertext)</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-900 text-gray-400 text-center">
+    © 2025 Event Cleaning – Alle Rechte vorbehalten.
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: ".swiper-pagination", clickable: true },
+    });
+  </script>
+
+</body>
+</html>
